@@ -20,7 +20,7 @@ public class Evento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "tittulo", length = 100)
+    @Column(name = "tit ulo", length = 100)
     private String titulo;
 
     @Column(name = "descricao", length = 1000)
@@ -30,5 +30,8 @@ public class Evento {
     private LocalDateTime dataHora;
 
     @Column(name = "local", length = 200)
-    private String Local;
+    private String local;
+
+    @Column(name = "deletado")
+    private Boolean deletado = false;
 }
