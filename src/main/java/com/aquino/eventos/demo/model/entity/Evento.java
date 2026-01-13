@@ -20,7 +20,7 @@ public class Evento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "tit ulo", length = 100)
+    @Column(name = "titulo", length = 100)
     private String titulo;
 
     @Column(name = "descricao", length = 1000)
